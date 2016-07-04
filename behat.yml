@@ -1,6 +1,4 @@
 # Behat integration test setup (see behat.org).
-# More information about running these tests can be found under
-# https://github.com/silverstripe-labs/silverstripe-behat-extension.
 # It is safe to remove this file for normal website operation.
 default:
   filters:
@@ -12,7 +10,6 @@ default:
 
     SilverStripe\BehatExtension\MinkExtension:
       # Adjust "base_url" to your own website URL.
-      # Can be set via environment variables or _ss_environment.php/$_FILE_TO_URL_MAPPING as well.
       base_url: https://code.totaralms.com/qatest/qatest.php
       files_path: %behat.paths.base%/framework/tests/behat/features/files/
       default_session: selenium2
@@ -34,7 +31,6 @@ chrome:
 
     SilverStripe\BehatExtension\MinkExtension:
       # Adjust "base_url" to your own website URL.
-      # Can be set via environment variables or _ss_environment.php/$_FILE_TO_URL_MAPPING as well.
       base_url: https://code.totaralms.com/qatest/qatest.php
       files_path: %behat.paths.base%/framework/tests/behat/features/files/
       default_session: selenium2
